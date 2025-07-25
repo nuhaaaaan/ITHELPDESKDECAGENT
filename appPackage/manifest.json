@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.21",
+  "id": "${{TEAMS_APP_ID}}",
+  "version": "1.0.0",
+  "developer": {
+    "name": "My IT Department",
+    "websiteUrl": "https://www.example.com",
+    "privacyUrl": "https://www.example.com/privacy",
+    "termsOfUseUrl": "https://www.example.com/termsofuse"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "IThelpdeskdecagent",
+    "full": "IT Help Desk Declarative Agent"
+  },
+  "description": {
+    "short": "Assistant for common IT issues like password resets and VPN help.",
+    "full": "IThelpdeskdecagent helps employees with common IT issues by providing answers from official IT policies, FAQs, procurement guides, and SOPs. It's designed to enhance self-service for password resets, VPN access, hardware requests, and contacting the support team."
+  },
+  "accentColor": "#004578",
+  "copilotAgents": {
+    "declarativeAgents": [
+      {
+        "id": "IThelpdeskdecagent",
+        "file": "declarativeAgent.json"
+      }
+    ]
+  },
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ]
+}
